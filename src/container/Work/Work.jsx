@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
-import { AppWrapper } from '../../wrapper';
+import { AppWrapper, MotionWrapper } from '../../wrapper';
 import './Work.scss';
 import { images } from '../../constants';
 
@@ -13,13 +13,17 @@ const portfolioItems = [
 ];
 
 const Work = () => {
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-
   return (
     <>
-      <h2 className="head-text">Some of my recent <span>Projects</span></h2>
+      <div className="app__profiles">
+        Here's some stuff I've made recently
+      </div>
     </>
   )
 }
 
-export default AppWrapper(Work, 'work');
+export default AppWrapper(
+  MotionWrapper(Work, 'app__work'), 
+  'work',
+  "app__primarybg"
+);

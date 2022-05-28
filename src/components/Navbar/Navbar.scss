@@ -4,10 +4,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
     position: fixed;
     z-index: 2;
 }
@@ -17,9 +13,19 @@
     justify-self: flex-start;
     align-items: center;
 
-    p {
+    a {
         font-size: 1rem;
         text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        color: var(--gray-color);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+
+        &:hover {
+            color: var(--secondary-color);
+        }
 
         @media screen and (min-width: 2000px) {
             width: 180px;
@@ -31,7 +37,7 @@
 .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 
@@ -55,6 +61,8 @@
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
 
             &:hover {
                 color: var(--secondary-color);
