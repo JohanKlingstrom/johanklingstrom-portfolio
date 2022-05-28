@@ -29,7 +29,7 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
+              <p className="p-text">Hello! My name is</p>
               <h1 className="head-text">Johan</h1>
             </div>
           </div>
@@ -39,31 +39,6 @@ const Header = () => {
             <p className="p-text">Electronic Musician</p>
           </div>
         </div>
-      </motion.div>
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={images.profile} alt="profile-bg" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
-          src={images.circle}
-          alt="profile_circle"
-          className="overlay_circle"
-        />
-      </motion.div>
-      <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`} >
-            <img src={circle} alt="styling-circle" />
-          </div>
-        ))}
       </motion.div>
     </div>
   )

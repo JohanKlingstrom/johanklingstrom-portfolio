@@ -18,4 +18,4 @@ const AppWrapper = (Component, idName, classNames) => function HOC() {
   )
 }
 
-export default AppWrapper
+export default AppWrapper;
