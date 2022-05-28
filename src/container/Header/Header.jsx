@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 import { AppWrapper, MotionWrapper } from '../../wrapper';
 
-import { images } from '../../constants';
 import './Header.scss';
 
 const rotatingText = ["Electronic Music Producer", "Video Game Nerd", "Ramen Enthusiast", "Friend of Cats", "DJ", "Hobby Philosopher"]

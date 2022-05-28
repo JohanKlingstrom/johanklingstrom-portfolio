@@ -3,11 +3,11 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #d3f3ff;
+  --primary-color: #02050c;
   --secondary-color: #0d284c;
-  --black-color: #030303;
+  --black-color: #fff;
   --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  --gray-color: #fff;
   --brown-color: #46364a;
   --white-color: #ffffff;
   --test: #000;
@@ -18,11 +18,4 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-}
-
-.canvas {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
 }
