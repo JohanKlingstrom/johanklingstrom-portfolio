@@ -10,10 +10,10 @@ const About = () => {
     <>
       <div className="app__profiles app__flex">
         <h2 className="head-text">Who am I?</h2>
-        <p className="p-text badge-cmp">I used to work with <a href="https://abiosgaming.com/" rel="noreferrer" target="_blank">~esports data~</a> which was a dream because I've always loved video games.<br />
-        Then covid happened and I took the time to get introspective and studied <a href="https://www.su.se/filosofiska-institutionen/" rel="noreferrer" target="_blank">philosophy at SU</a> for a bit.<br />
-        Right now I'm learning how to build web stuff at<a target="_blank" href="https://www.hyperisland.com/"> Hyper Island!</a> in Stockholm.<br/>
-        Oh and I've also made music that got featured on <a href="https://youtu.be/J5lWlsgKZYY" rel="noreferrer" target="_blank">Swedish national television</a>!<br />
+        <p className="p-text app__about-text-container">I'm a video game nerd from Stockholm that used to work with ✨<a href="https://abiosgaming.com/" rel="noreferrer" target="_blank">esports data</a>✨
+        Now I'm learning how to build cool web stuff at Hyper Island in Stockholm, and I'm trying to figure out 3D.
+        I'm super curious about using new tools in creative ways to see what happens
+        Oh and I've also made music that got featured on <a href="https://youtu.be/J5lWlsgKZYY" rel="noreferrer" target="_blank">Swedish national television</a>!
         </p>
       </div>
     </>

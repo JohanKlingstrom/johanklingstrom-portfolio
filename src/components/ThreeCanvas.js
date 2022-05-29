@@ -58,7 +58,6 @@ const SpinningMesh = ({position, args, color}) => {
   var mouse_monitor = function(e) {
     var x = e.pageX;
     var y = e.pageY;
-    console.log(x, y);
   }
   
   window.onload = function() {

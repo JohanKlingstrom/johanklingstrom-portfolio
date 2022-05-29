@@ -44,7 +44,7 @@
 }
 
 .down-arrow {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     animation-name: arrowBounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -53,7 +53,7 @@
 
 .arrow-white {
     color: var(--white-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @keyframes arrowBounce {
