@@ -8,8 +8,9 @@ import './Work.scss';
 const Work = () => {
   return (
     <>
-      <div className="app__profiles">
-        <p className="p-text">Here's some stuff I've made recently</p>
+      <div className="app__profiles app__flex">
+        <h2 className="head-text">Here's some stuff I've been building recently</h2>
+        <p className="p-text">Inkterest</p>
       </div>
     </>
   )

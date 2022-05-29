@@ -6,7 +6,7 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <div className="app__footer app__flex">
-      <h2 className="p-text">Let's build some stuff!</h2>
+      <h2 className="p-text">Let's build more cool stuff!</h2>
         <p className="p-text">
           johan.klingstrom@hyperisland.se<br />
           +46 72 937 4116

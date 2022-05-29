@@ -4,13 +4,17 @@
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #02050c;
-  --secondary-color: #0d284c;
+  --secondary-color: #004eb4;
   --black-color: #fff;
   --lightGray-color: #e4e4e4;
-  --gray-color: #fff;
+  --gray-color: #ECECEC;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+  --white-color: #ECECEC;
   --test: #000;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -18,4 +22,5 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

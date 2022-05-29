@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { BsCaretDownFill } from 'react-icons/bs'
 
 import { AppWrapper, MotionWrapper } from '../../wrapper';
 
@@ -10,12 +11,16 @@ const rotatingText = ["Electronic Music Producer", "Video Game Nerd", "Ramen Ent
 const Header = () => {
   return (
     <div id="home" className="app__header app__flex">
-        <div className="app__flex">
-          <p className="p-text">Hello! My name is</p>
-          <h1 className="head-text">Johan</h1>
-          <p className="p-text">I'm a front end developer student at<a target="_blank" href="https://www.hyperisland.com/"> Hyper Island!</a></p>
-          <p className="p-text">I'm also a <span>placeholder</span></p>
+        <div className="app__flex ">
+          <p className="p-text">Hey there, traveler of the internet!</p>
+          <h1 className="head-text">My name is Johan.</h1>
+          <p className="p-text">I like making stuff.</p>
         </div>
+        <span class="down-arrow">
+          <a href="#about">
+            <BsCaretDownFill className="arrow-white" />
+          </a>
+        </span>
     </div>
   )
 }

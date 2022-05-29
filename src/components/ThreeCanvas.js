@@ -1,9 +1,6 @@
-import { useSpring, a } from '@react-spring/three';
-
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { TextureLoader } from 'three';
-import { BufferAttribute } from 'three';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import React, { useEffect, useMemo, useRef } from 'react';
+import { TextureLoader, BufferAttribute } from 'three';
 
 function BufferPoints({ count = 1000 }) {
   const points = useMemo(() => {
@@ -42,13 +39,6 @@ const SpinningMesh = ({position, args, color}) => {
   useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.0002));
   useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y -= 0.003));
   useFrame(() => (mesh.current.material.displacementScale = .5 -mouseY * -0.004));
-  
-
-  const [expand, setExpand] = useState(false);
-
-  const props = useSpring({
-    scale: expand ? [1.4, 1.4, 1.4] : [1, 1 ,1],
-  });
 
   useEffect(() => {
     window.addEventListener('mousemove', onDocumentMouseMove);
@@ -59,8 +49,6 @@ const SpinningMesh = ({position, args, color}) => {
     const windowHalfY = window.innerHeight /2;
     let mouseX = 0
     let mouseY = 0
-    let targetX = 0
-    let targetY = 0
 
   function onDocumentMouseMove(e){
     mouseX = (e.clientX - windowHalfX)
@@ -78,9 +66,7 @@ const SpinningMesh = ({position, args, color}) => {
   }
 
   return(
-        <a.mesh onClick={() => setExpand(!expand)} scale={props.scale} position={position} ref={mesh}>
-          {/* <boxBufferGeometry attach='geometry' args={args} /> */}
-          {/* <torusKnotBufferGeometry attach='geometry' args={args} /> */}
+        <mesh position={position} ref={mesh}>
           <sphereBufferGeometry attach='geometry' args={args} />
           <meshStandardMaterial attach='material' 
             displacementScale={-1}
@@ -91,7 +77,7 @@ const SpinningMesh = ({position, args, color}) => {
             roughnessMap={roughnessMap}
             aoMap={aoMap}
             />
-        </a.mesh>
+        </mesh>
   )
 }
 
@@ -101,28 +87,12 @@ export default function ThreeCanvas() {
             <BufferPoints />
             <ambientLight intensity={.15} color={"#071332"}/>
             <directionalLight position={[-120, 50, 10]}
-                intensity={1}
+                intensity={0.8}
                 color={"#fff"}
-                // shadow-mapSize-width={1024}
-                // shadow-mapSize-height={1024}
-                // shadow-camera-far={50}
-                // shadow-camera-left={-10}
-                // shadow-camera-right={10}
-                // shadow-camera-top={10}
-                // shadow-camera-bottom={-10}
             />
-            <pointLight position={[10, 10, -15]} intensity={12} color={"#071332"} />
-            {/* <pointLight position={[0, -10, 0]} intensity={1.5} /> */}
-
-            {/* <group>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]} >
-                <planeBufferGeometry attach='geometry' args={[100, 100]} />
-            </mesh>
-            </group> */}
+            <pointLight position={[10, 10, -15]} intensity={15} color={"#071332"} />
+            <pointLight position={[0, -10, 0]} intensity={.05} />
             <SpinningMesh position={[0, 0, 0]} args={[4.5, 64, 64]} /> (.8, 64, 64)
-            {/* <SpinningMesh position={[0, 0, 0]} args={[3, 1, 44, 12, 8, 11]} color='lightblue' /> torusknot */}
-            {/* <SpinningMesh position={[-2, 1, -5]} args={[2, 0.2, 44, 12, 8, 11]} color="pink" /> */}
-            {/* <SpinningMesh position={[5, 1, -2]} color="pink" /> */}
         </Canvas>
     )
 }
