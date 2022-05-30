@@ -43,33 +43,37 @@
     }
 }
 
-.down-arrow {
-    margin-top: 1.5rem;
-    animation-name: arrowBounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transition: all 0.2s ease;
-  }
+  .app__about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
 
-.arrow-white {
-    color: var(--white-color);
-    font-size: 1.5rem;
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      width: 100%;
+    }
 }
 
-@keyframes arrowBounce {
-    0% {
-      transform: translateY(0px);
-    }
-    70% {
-      transform: translateY(-20px);
-    }
-    80% {
-      transform: translateY(0px);
-    }
-    90% {
-      transform: translateY(-15px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
+.app__profiles-image {
+  max-width: 180px;
+  // border-radius: 1rem 2rem;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    filter: invert(1);
   }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 1.3rem;
+    display: none;
+  }
+}
+
+.div-heading-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}

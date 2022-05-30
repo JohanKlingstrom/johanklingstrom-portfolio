@@ -8,7 +8,7 @@ function BufferPoints({ count = 1000 }) {
     return new BufferAttribute(new Float32Array(p), 3);
   }, [count]);
 
-  const cross = useLoader(TextureLoader, 'heart.png');
+  const cross = useLoader(TextureLoader, 'cross.png');
   
 
   const pointsRef = useRef();
@@ -41,8 +41,9 @@ const SpinningMesh = ({position, args, color}) => {
       ])
 
   const mesh = useRef();
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.0002));
-  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y -= 0.003));
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.0004));
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += mouseX / 50000));
+  useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y -= 0.0008));
   useFrame(() => (mesh.current.material.displacementScale = .5 -mouseY * -0.004));
 
   useEffect(() => {
@@ -51,10 +52,13 @@ const SpinningMesh = ({position, args, color}) => {
   });
 
     const windowHalfY = window.innerHeight /2;
-    let mouseY = 0
+    const windowHalfX = window.innerWidth /2;
+    let mouseY = 0;
+    let mouseX = 0;
 
   function onDocumentMouseMove(e){
     mouseY = (e.clientY - windowHalfY)
+    mouseX = (e.clientX - windowHalfX)
 }
 
   return(

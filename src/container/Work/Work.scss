@@ -113,8 +113,16 @@
     opacity: 1;
   }
 
-// .app__profiles-article {
-//     background-color: white;
-//     height: 4rem;
+.app__profiles-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-// }
+.article-column {
+    width: 50%;
+}
+
+.article-links {
+    gap: 2rem;
+}

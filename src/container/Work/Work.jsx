@@ -1,21 +1,29 @@
 import React from 'react';
+import { SliderData } from '../../components/ImgSlider/SliderData';
 
 import { AppWrapper, MotionWrapper } from '../../wrapper';
+import { ImgSlider } from '../../components';
 import './Work.scss';
 
 const Work = () => {
   return (
     <>
       <div className="app__profiles app__flex">
-        <h2 className="head-text">Here's some stuff I built recently:</h2>
-        <article className="p-text app__profiles-article">My latest project is <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer">Inkterest</a>, for all the tattoo enthusiasts.</article>
-        <article className="p-text app__profiles-article">With some other Hypers I made a game, <a href="https://astro-cat.netlify.app/" target="_blank" rel="noreferrer">Astrocat</a> (I like space).</article>
-        <article className="p-text app__profiles-article">
-          <span className="wrapped-wrapper">We love music
-              <img src="/wrapped.png" alt="spotify-wrapped-2021" className="hover-wrapped" />
-          </span>
-          , so we also made a <a href="https://github.com/JohanKlingstrom/Project2Quiz" target="_blank" rel="noreferrer">Spotify API Quiz</a>.</article>
-          <p className="p-text">You can find some more stuff on my <a href="https://github.com/JohanKlingstrom" target="_blank" rel="noreferrer" >github</a>.</p>
+        <article className="app__profiles-article">
+          <h2 className="head-text">
+            <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer">Inkterest</a>
+          </h2>
+            <ImgSlider slides={SliderData} />
+              <p className="p-text article-column">
+                Inkterest is a simple image sharing social platform themed for tattoo enthusiasts.
+                I built the site to practice making a flexible UI, as well as handling both the front- and backend.
+                Project was built with React, Sanity.io and TailwindCSS.
+              </p>
+              <div className="flex-row article-links">
+                <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer" className="p-text">Live</a>
+                <a href="https://github.com/JohanKlingstrom/inkterest" target="_blank" rel="noreferrer" className="p-text">Github</a>
+              </div>
+        </article>
       </div>
     </>
   )

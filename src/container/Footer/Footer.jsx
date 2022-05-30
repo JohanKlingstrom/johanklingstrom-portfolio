@@ -6,11 +6,11 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <div className="app__footer app__flex">
-      <h2 className="head-text">Let's build something!</h2>
-        <p className="p-text">
-          <a href="mailto:johan.klingstrom@hyperisland.se">johan.klingstrom@hyperisland.se</a><br />
-          Stockholm, Sweden
-        </p>
+      <p className="p-text">Need a cool shiny new intern?</p>
+        <h2 className="head-text">
+          <a href="mailto:johan.klingstrom@hyperisland.se">johan.klingstrom@hyperisland.se</a>
+        </h2>
+        <p className="p-text">My cat thinks you should hire me.</p>
     </div>
   )
 }
