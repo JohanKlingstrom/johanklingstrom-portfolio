@@ -7,10 +7,10 @@ const Work = () => {
   return (
     <>
       <div className="app__profiles app__flex">
-        <h2 className="p-text">Since last August I've been trying to build stuff with code</h2>
-        <article className="p-text">I recently built <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer">image sharing platform</a> for tattoo enthusiasts.</article>
-        <article className="p-text">I made a <a href="https://github.com/JohanKlingstrom/Project2Quiz" target="_blank" rel="noreferrer">music quiz using the Spotify API</a> with some other Hypers.</article>
-        <article className="p-text">Then we made <a href="https://github.com/JohanKlingstrom/Astrocat" target="_blank" rel="noreferrer">a little game with cats in space</a> (I like space).</article>
+        <h2 className="head-text">Here's some stuff I built recently:</h2>
+        <article className="p-text app__profiles-article">My latest project is <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer">Inkterest</a>, for all the tattoo enthusiasts.</article>
+        <article className="p-text app__profiles-article">With some other Hypers I made <a href="https://astro-cat.netlify.app/" target="_blank" rel="noreferrer">Astrocat</a>, (I like space).</article>
+        <article className="p-text app__profiles-article">Banger alert, we also made a <a href="https://github.com/JohanKlingstrom/Project2Quiz" target="_blank" rel="noreferrer">Spotify API Quiz</a>.</article>
       </div>
     </>
   )

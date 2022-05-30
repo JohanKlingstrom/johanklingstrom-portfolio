@@ -8,6 +8,9 @@ function BufferPoints({ count = 1000 }) {
     return new BufferAttribute(new Float32Array(p), 3);
   }, [count]);
 
+  const cross = useLoader(TextureLoader, 'heart.png');
+  
+
   const pointsRef = useRef();
   useFrame(() => (pointsRef.current.rotation.x = pointsRef.current.rotation.y += 0.001));
 
@@ -17,8 +20,10 @@ function BufferPoints({ count = 1000 }) {
         <bufferAttribute attach={"attributes-position"} {...points} />
       </bufferGeometry>
       <pointsMaterial
-        size={0.1}
+        size={0.14}
         threshold={0.1}
+        map={cross}
+        transparent={true}
         color={0xffffff}
         sizeAttenuation={true}
       />
