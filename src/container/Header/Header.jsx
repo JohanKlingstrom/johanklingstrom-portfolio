@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div id="home" className="app__header app__flex">
         <div className="app__flex ">
-          <p className="p-text">Hey there, traveler of the internet!</p>
+          <p className="p-text">Hi there, internet person!</p>
           <h1 className="head-text">My name is Johan.</h1>
           <p className="p-text">I like making things.</p>
         </div>
