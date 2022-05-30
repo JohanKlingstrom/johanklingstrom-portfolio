@@ -50,24 +50,12 @@ const SpinningMesh = ({position, args, color}) => {
     return () => window.removeEventListener('mousemove', onDocumentMouseMove);
   });
 
-    const windowHalfX = window.innerWidth /2;
     const windowHalfY = window.innerHeight /2;
-    let mouseX = 0
     let mouseY = 0
 
   function onDocumentMouseMove(e){
-    mouseX = (e.clientX - windowHalfX)
     mouseY = (e.clientY - windowHalfY)
 }
-
-  var mouse_monitor = function(e) {
-    var x = e.pageX;
-    var y = e.pageY;
-  }
-  
-  window.onload = function() {
-    this.addEventListener('mousemove', mouse_monitor);
-  }
 
   return(
         <mesh position={position} ref={mesh}>

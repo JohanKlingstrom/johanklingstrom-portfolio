@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
-import { BsLinkedin, BsGithub, BsMailbox } from 'react-icons/bs';
+import React from 'react';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 import './Navbar.scss';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="app__navbar">
