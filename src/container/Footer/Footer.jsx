@@ -11,6 +11,8 @@ const Footer = () => {
           <a href="mailto:johan.klingstrom@hyperisland.se">johan.klingstrom@hyperisland.se</a>
         </h2>
         <p className="p-text">My cat thinks you should hire me.</p>
+        
+        
     </div>
   )
 }

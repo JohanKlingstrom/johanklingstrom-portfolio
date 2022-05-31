@@ -93,26 +93,6 @@
     }
 }
 
-.wrapped-wrapper {
-    text-decoration: underline wavy;
-}
-
-.hover-wrapped {
-    position: absolute;
-    left: -200%;
-    top: 54%;
-    width: 1px;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-  }
-
-.wrapped-wrapper:hover .hover-wrapped {
-    left: 10%;
-    width: 20%;
-    display: block;
-    opacity: 1;
-  }
-
 .app__profiles-article {
     display: flex;
     flex-direction: column;

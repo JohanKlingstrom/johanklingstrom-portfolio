@@ -1,5 +1,5 @@
 import React from 'react';
-import { SliderData } from '../../components/ImgSlider/SliderData';
+import { SliderData } from '../../components/ImgSlider/InkterestSliderData';
 
 import { AppWrapper, MotionWrapper } from '../../wrapper';
 import { ImgSlider } from '../../components';
@@ -17,7 +17,7 @@ const Work = () => {
               <p className="p-text article-column">
                 Inkterest is a simple image sharing social platform themed for tattoo enthusiasts.
                 I built the site to practice making a flexible UI, as well as handling both the front- and backend.
-                Project was built with React, Sanity.io and TailwindCSS.
+                Project was built with React, Sanity.io and TailwindCSS, and uses Google Authentication for login.
               </p>
               <div className="flex-row article-links">
                 <a href="https://inkterest.netlify.app/" target="_blank" rel="noreferrer" className="p-text">Live</a>
