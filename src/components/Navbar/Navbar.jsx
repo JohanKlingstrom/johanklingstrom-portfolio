@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="app__navbar-logo">
         <a href='#home'>Johan Klingström</a>
       </div>
-      <a href="https://github.com/JohanKlingstrom" target="_blank" rel="noreferrer">
+      <a href="https://github.com/JohanKlingstrom" className="app__navbar-github" target="_blank" rel="noreferrer">
           <BsGithub />
       </a>
     </nav>

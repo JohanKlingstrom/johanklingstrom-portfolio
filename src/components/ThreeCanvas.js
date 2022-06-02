@@ -8,7 +8,7 @@ function BufferPoints({ count = 1000 }) {
     return new BufferAttribute(new Float32Array(p), 3);
   }, [count]);
 
-  const cross = useLoader(TextureLoader, 'cross.png');
+  const cross = useLoader(TextureLoader, 'heart.png');
   
 
   const pointsRef = useRef();
@@ -79,16 +79,16 @@ const SpinningMesh = ({position, args, color}) => {
 
 export default function ThreeCanvas() {
     return (
-        <Canvas colorManagement camera={{position: [-5, 2, 10], fov: 60}} style={{height: "100vh", position: "fixed", zIndex: 1}} >
+        <Canvas colorManagement camera={{position: [-12, 2, 10], fov: 60}} style={{height: "100vh", position: "fixed", zIndex: 1}} >
             <BufferPoints />
-            <ambientLight intensity={.15} color={"#071332"}/>
+            <ambientLight intensity={.12} color={"#071332"}/>
             <directionalLight position={[-120, 50, 10]}
                 intensity={0.8}
                 color={"#fff"}
             />
             <pointLight position={[10, 10, -15]} intensity={15} color={"#071332"} />
             <pointLight position={[0, -10, 0]} intensity={.05} />
-            <SpinningMesh position={[0, 0, 0]} args={[4.5, 64, 64]} /> (.8, 64, 64)
+            <SpinningMesh position={[0, 0, 0]} args={[4.5, 64, 64]} />
         </Canvas>
     )
 }

@@ -4,7 +4,7 @@
   --font-base: monospace, "DM Sans", sans-serif;
 
   --primary-color: #02050c;
-  --secondary-color: #307bdd;
+  --secondary-color: #00c8ff;
   --black-color: #fff;
   --lightGray-color: #e4e4e4;
   --gray-color: #ECECEC;
@@ -13,7 +13,16 @@
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 0.3125rem;
+  background: #36363646;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00c8ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #36363646;
 }
 
 * {

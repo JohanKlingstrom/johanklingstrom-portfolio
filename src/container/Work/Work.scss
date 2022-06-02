@@ -100,9 +100,27 @@
 }
 
 .article-column {
-    width: 50%;
+    width: 60%;
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+        margin: 1rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 90%;
+        margin: 1rem;
+    }
 }
 
 .article-links {
     gap: 2rem;
+}
+
+.app__profiles-video {
+
+    @media screen and (max-width: 400px) {
+        width: 70%;
+        margin: 1rem;
+    }
 }

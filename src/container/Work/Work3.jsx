@@ -12,7 +12,7 @@ const Work3 = () => {
             DocLounge Redesign
           </h2>
           <video width="750" height="500" controls autoPlay muted >
-            <source src="/videos/dlvid.mp4" type="video/mp4"/>
+            <source src="/videos/dlvid.mp4" type="video/mp4" className="app__profiles-video" />
           </video>
               <p className="p-text article-column">
                 Together with a group of classmates I worked on a proposal for a full redesign for Nordic films distribution company, <a href="https.//doclounge.se" target="_blank" rel="noreferrer">DocLounge</a>.
