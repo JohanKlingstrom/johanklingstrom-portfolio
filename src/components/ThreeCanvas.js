@@ -42,7 +42,7 @@ const SpinningMesh = ({position, args, color}) => {
 
   const mesh = useRef();
   useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.0004));
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += mouseX / 50000));
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += mouseX / 100000));
   useFrame(() => (mesh.current.rotation.y = mesh.current.rotation.y -= 0.0008));
   useFrame(() => (mesh.current.material.displacementScale = .5 -mouseY * -0.004));
 

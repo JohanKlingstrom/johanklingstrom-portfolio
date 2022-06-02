@@ -16,7 +16,7 @@ const Work2 = () => {
             <ImgSlider slides={SliderData} />
               <p className="p-text article-column">
                 Astrocat was built together with two other Hyper Island students fairly early on in our program. 
-                We wanted to build a simple but fun little project with addicting arcade-y gameplay, so we chose to create a vertical platformer with procedurally generated obstacles. Built in Phaser.
+                We wanted to build a simple but fun little project with addicting arcade-y gameplay, so we chose to create a vertical platformer with procedurally generated obstacles. Built in Phaser, a lightweight game engine written in JavaScript.
               </p>
               <div className="flex-row article-links">
                 <a href="https://astro-cat.netlify.app/" target="_blank" rel="noreferrer" className="p-text">Live</a>
