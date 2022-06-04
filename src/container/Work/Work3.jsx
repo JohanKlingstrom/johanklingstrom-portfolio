@@ -11,7 +11,7 @@ const Work3 = () => {
           <h2 className="head-text">
             DocLounge Redesign
           </h2>
-          <video width="750" height="500" controls autoPlay muted >
+          <video className="video" autoPlay controls muted >
             <source src="/videos/dlvid.mp4" type="video/mp4" className="app__profiles-video" />
           </video>
               <p className="p-text article-column">

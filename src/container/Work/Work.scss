@@ -117,10 +117,12 @@
     gap: 2rem;
 }
 
-.app__profiles-video {
 
+.video {
+    width: 70%;
+    margin: 2rem 1rem;
     @media screen and (max-width: 400px) {
-        width: 70%;
+        width: 80%;
         margin: 1rem;
     }
 }

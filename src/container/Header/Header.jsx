@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsCaretDownFill } from 'react-icons/bs'
 import { motion } from 'framer-motion';
 
 import { AppWrapper, MotionWrapper } from '../../wrapper';
