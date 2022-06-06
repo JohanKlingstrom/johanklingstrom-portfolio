@@ -10,7 +10,7 @@ const Footer = () => {
         <h2 className="head-text">
           <a href="mailto:johan.klingstrom@hyperisland.se">johan.klingstrom@hyperisland.se</a>
         </h2>
-        <p className="p-text">Let's have a coffee and talk.</p>
+        <p className="p-text">Let's have a coffee and talk!</p>
         
         
     </div>
