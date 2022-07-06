@@ -20,8 +20,8 @@ const Header = () => {
           <div className="div-heading-flex">
             <h2 className="head-text">Hi there, Internet person!</h2>
             <p className="p-text app__about-text-container">I'm a creative nerd and <a href="https://open.spotify.com/artist/3hXFd22CK7momnB40jiq9Z?si=gt6nKzGuQq-tWHLNGYlrpg" rel="noreferrer" target="_blank">music producer</a> from Stockholm, currently learning how to build cool web stuff at Hyper Island. 
-              Dreaming about cool ways to blend code, music and visuals. Super curious about 3D (This site uses Three.js).
-              The past few years I have worked with ✨<a href="https://abiosgaming.com/about" rel="noreferrer" target="_blank">esports data</a>✨, studied philosophy, and have had my music featured 
+              Dreaming about cool ways to blend code, music and visuals. Curious about 3D, this site uses Three.js.
+              The past few years I have worked with <a href="https://abiosgaming.com/about" rel="noreferrer" target="_blank">esports data</a>, studied philosophy, and have had my music featured 
               on <a href="https://youtu.be/J5lWlsgKZYY" rel="noreferrer" target="_blank">Swedish national television</a>.
             </p>
             <p className="p-text">Scroll down to see some of my web-dev projects.</p>
