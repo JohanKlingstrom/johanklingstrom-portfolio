@@ -9,14 +9,13 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const assets = [
-      './static/media/inkterest1.png',
-      '/src/assets/inkterest/inkterest2.png',
-      '/src/assets/inkterest/inkterest3.png',
-      '/src/assets/astrocat/astrocat1.png',
-      '/src/assets/astrocat/astrocat2.png',
-      '/src/assets/astrocat/astrocat3.png',
+      '/assets/inkterest/inkterest1.png',
+      '/assets/inkterest/inkterest2.png',
+      '/assets/inkterest/inkterest3.png',
+      '/assets/astrocat/astrocat1.png',
+      '/assets/astrocat/astrocat2.png',
+      '/assets/astrocat/astrocat3.png',
     ];
-
     cacheAssets(assets);
   }, []);
 
