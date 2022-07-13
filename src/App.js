@@ -6,43 +6,43 @@ import { Navbar, ThreeCanvas } from './components';
 import './App.scss';
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const assets = [
-      './assets/inkterest/inkterest1.png',
-      './assets/inkterest/inkterest2.png',
-      './assets/inkterest/inkterest3.png',
-      './assets/astrocat/astrocat1.png',
-      './assets/astrocat/astrocat2.png',
-      './assets/astrocat/astrocat3.png',
-    ];
-    cacheAssets(assets);
-  }, []);
+  // const [isLoading, setIsLoading] = useState(true);
+  // useEffect(() => {
+  //   const assets = [
+  //     './assets/inkterest/inkterest1.png',
+  //     './assets/inkterest/inkterest2.png',
+  //     './assets/inkterest/inkterest3.png',
+  //     './assets/astrocat/astrocat1.png',
+  //     './assets/astrocat/astrocat2.png',
+  //     './assets/astrocat/astrocat3.png',
+  //   ];
+  //   cacheAssets(assets);
+  // }, []);
 
-  const cacheAssets = async (srcArray) => {
-    const promises = await srcArray.map((src) => {
-      return new Promise(function (resolve, reject) {
-        const img = new Image();
+  // const cacheAssets = async (srcArray) => {
+  //   const promises = await srcArray.map((src) => {
+  //     return new Promise(function (resolve, reject) {
+  //       const img = new Image();
 
-        img.src = src;
-        img.onload = resolve();
-        img.onerror = reject();
-      });
-    });
+  //       img.src = src;
+  //       img.onload = resolve();
+  //       img.onerror = reject();
+  //     });
+  //   });
 
-    await Promise.all(promises);
+  //   await Promise.all(promises);
 
-    setIsLoading(false);
-  }
+  //   setIsLoading(false);
+  // }
 
   return (
     <div className="app">
-      {isLoading
+      {/* {isLoading
       ?
       <div className="spinner-div" >
         <CircleLoader />
       </div>
-      :
+      : */}
       <main>
         <Navbar />
         <ThreeCanvas />
@@ -52,7 +52,7 @@ const App = () => {
         <Work3 />
         <Footer />
       </main>
-      }
+      {/* } */}
     </div>
   );
 }
